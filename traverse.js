@@ -129,3 +129,7 @@ data.properties.forEach(property => {
 const activeProperties = data.properties.filter(p => p.status === 'active').map(p => {
   console.log(`Active Properties: ${p.name}`)
 })
+
+const totalValuation = data.properties.reduce((sum, p) => sum + p.valuation.currentValue,0)
+console.log(`Total valuation: ${totalValuation}`);
+
