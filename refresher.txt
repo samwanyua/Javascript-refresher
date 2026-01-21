@@ -1,0 +1,2 @@
+JS: single threaded, event-loop driven, non-blocking, prototype-based
+
