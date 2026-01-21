@@ -115,3 +115,17 @@ for(const property of data.properties){
 data.properties.forEach(property => {
   console.log(`Manager: ${property.manager.name}, Contact: ${property.manager.contact} `)
 });
+
+// nested loops
+data.properties.forEach(property => {
+  console.log(`${property.name} Units`)
+  property.units.forEach(unit=> {
+    console.log(`- ${unit.type} | Rent: ${unit.rent} | Occupied: ${unit.occupied}`)
+  })
+})
+
+
+// active properties
+const activeProperties = data.properties.filter(p => p.status === 'active').map(p => {
+  console.log(`Active Properties: ${p.name}`)
+})
