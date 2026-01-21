@@ -23,4 +23,6 @@ var sayHi = function() {
 }
 
 // declarations are hoisted, initializations are not
-// function declarations are fully hoisted - you can call it before it appears in the code
+// function declarations are fully hoisted - you can call it before it appears in the code (are in Temporal dead zone TDZ)
+
+

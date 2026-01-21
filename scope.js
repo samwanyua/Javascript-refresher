@@ -13,3 +13,6 @@ function testScope(){
 
 testScope()
 // console.log(functionVar) // doesn't work
+
+// let/ const -> block scoped
+// var -> function scope
