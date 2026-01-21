@@ -26,3 +26,4 @@ console.log(numbers.every(n => n>10))
 // combining methods
 const squaredEven = numbers.filter(n => n % 2 === 0).map(n => n * n)
 console.log(`Squared even numbers: ${squaredEven}`)
+
