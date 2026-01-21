@@ -105,3 +105,13 @@ data = {
 for(let i=0; i < data.properties.length; i++){
     console.log(`Property: ${data.properties[i].name}`)
 }
+
+// for ... of
+for(const property of data.properties){
+  console.log(`Property ID: ${property.id}, Name: ${property.name}`)
+}
+
+// forEach()
+data.properties.forEach(property => {
+  console.log(`Manager: ${property.manager.name}, Contact: ${property.manager.contact} `)
+});
