@@ -133,3 +133,9 @@ const activeProperties = data.properties.filter(p => p.status === 'active').map(
 const totalValuation = data.properties.reduce((sum, p) => sum + p.valuation.currentValue,0)
 console.log(`Total valuation: ${totalValuation}`);
 
+// getting the names of occupied units across all properties
+const occupiedUnits = data.properties
+                          .flatMap(p => p.units.map(u => ({...u, PropertyName: p.name})))
+                          .filter(u => u.occupied)
+                          .map(u => `${u.PropertyName}: ${u.unitId} (${u.type})`)
+console.log(`Occupied units: ${occupiedUnits}`)
