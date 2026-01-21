@@ -6,3 +6,4 @@ JS falsy values (when converted to boolean): false, 0, -0, "", null, undefined, 
 Truthy values: non-empty string, numbers other than 0,  Objects {}, [], functions, dates
 
 */
+
